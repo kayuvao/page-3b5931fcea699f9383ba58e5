@@ -1,0 +1,326 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Dvpn｜把订阅这件事讲清楚</title><meta name="description" content="Dvpn 用一页版面把订阅方案、客户端准备、使用步骤与常见问题讲清楚，语气克制，信息以实际页面标注为准。"><meta name="keywords" content="Dvpn, 订阅方案, Dvpn 套餐, 客户端使用说明, Dvpn 常见问题"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-50deb0d035.jt6wu8ghb.cn/"><meta property="og:type" content="website"><meta property="og:title" content="Dvpn｜把订阅这件事讲清楚"><meta property="og:description" content="Dvpn 用一页版面把订阅方案、客户端准备、使用步骤与常见问题讲清楚，语气克制，信息以实际页面标注为准。"><meta property="og:url" content="https://p-50deb0d035.jt6wu8ghb.cn/"><meta property="og:site_name" content="Dvpn"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-50deb0d035.jt6wu8ghb.cn/", "name": "Dvpn｜把订阅这件事讲清楚", "description": "Dvpn 用一页版面把订阅方案、客户端准备、使用步骤与常见问题讲清楚，语气克制，信息以实际页面标注为准。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="3b5931fcea699f9383ba58e5:1ed91ba7a224a11bec504d2773cf2bb3e805ae62f7c3c1b4842d1cdf01fc0073:0451743bd82ecdeec4e3"></head><body id="top"><style>
+  :root{--paper:#eceaef;--ink:#1b1a1f;--muted:#5f5c68;--line:#d3d0d9;--violet:#6d3bff;--violet-soft:#eee8ff;--panel:#f7f6f9;--max:1120px}
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.75;padding-bottom:72px}
+  a{color:var(--violet);text-decoration:none;border-bottom:1px solid rgba(109,59,255,.35)}
+  a:hover{border-bottom-color:var(--violet)}
+  .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 22px}
+
+  /* ---------- HERO ---------- */
+  .hero{border-bottom:1px solid var(--line);padding:56px 0 40px}
+  .hero-kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}
+  .hero-title{margin:0;font-size:clamp(58px,17vw,220px);line-height:.86;letter-spacing:-.045em;font-weight:800;color:var(--ink)}
+  .hero-title .dot{color:var(--violet)}
+  .hero-sub{margin:26px 0 0;max-width:42ch;font-size:clamp(17px,2.1vw,21px);line-height:1.6;color:#2b2930}
+  .hero-meta{margin-top:34px;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:0;border-top:1px solid var(--line)}
+  .hero-meta div{padding:16px 18px 16px 0;border-bottom:1px solid var(--line)}
+  .hero-meta dt{font-size:11px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase;margin:0 0 6px}
+  .hero-meta dd{margin:0;font-size:15px;color:#2b2930}
+
+  /* ---------- SECTION BASE ---------- */
+  section{padding:64px 0;border-bottom:1px solid var(--line)}
+  .sec-label{display:flex;align-items:baseline;gap:14px;margin:0 0 30px;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+  .sec-label::after{content:"";flex:1;height:1px;background:var(--line)}
+  h2{font-size:clamp(26px,4vw,38px);line-height:1.28;letter-spacing:-.02em;margin:0 0 18px;font-weight:750}
+  h3{font-size:19px;margin:0 0 10px;font-weight:700;line-height:1.4}
+  p{margin:0 0 16px;color:#2b2930}
+  .lede{font-size:clamp(17px,2vw,20px);line-height:1.7;max-width:56ch;color:#2b2930}
+  .note{font-size:13.5px;color:var(--muted)}
+
+  /* 左侧色条卡片 */
+  .bar-card{position:relative;background:var(--panel);border:1px solid var(--line);border-left:6px solid var(--violet);padding:24px 26px;margin-bottom:18px}
+  .bar-card h3{margin-bottom:8px}
+  .bar-card p:last-child{margin-bottom:0}
+  .bar-card.is-quiet{border-left-color:#b8b2c9}
+
+  /* 双列表格样式说明块 */
+  .columns{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px 40px}
+
+  /* ---------- PLANS ---------- */
+  .plan{position:relative;background:var(--panel);border:1px solid var(--line);border-left:6px solid var(--violet);padding:28px 28px 26px;margin-bottom:22px}
+  .plan.is-recommended{background:#fff;border-left-width:10px}
+  .plan-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px 20px;padding-bottom:14px;margin-bottom:18px;border-bottom:1px dashed var(--line)}
+  .plan-name{font-size:22px;font-weight:750;margin:0;letter-spacing:-.01em}
+  .plan-flag{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--violet);border:1px solid var(--violet);padding:3px 9px}
+  .plan-price{margin-left:auto;font-size:26px;font-weight:800;letter-spacing:-.02em}
+  .plan-price span{font-size:13px;font-weight:500;color:var(--muted);letter-spacing:0}
+  .plan-annual{margin:-6px 0 18px;font-size:13.5px;color:var(--muted)}
+  .plan ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px 28px}
+  .plan li{position:relative;padding-left:18px;font-size:15px;color:#2b2930}
+  .plan li::before{content:"";position:absolute;left:0;top:.72em;width:8px;height:8px;background:var(--violet)}
+  .plan.is-quiet li::before{background:#b8b2c9}
+
+  /* ---------- STEPS ---------- */
+  .steps{counter-reset:s;margin:0;padding:0;list-style:none}
+  .steps li{counter-increment:s;position:relative;padding:0 0 22px 56px;margin-bottom:22px;border-bottom:1px solid var(--line)}
+  .steps li:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+  .steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:0;font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--violet);border:1px solid var(--violet);width:36px;height:28px;display:flex;align-items:center;justify-content:center}
+  .steps h3{margin-bottom:6px}
+  .steps p{margin:0;font-size:15px;color:#2b2930}
+
+  /* ---------- FAQ ---------- */
+  details{background:var(--panel);border:1px solid var(--line);border-left:6px solid var(--violet);margin-bottom:14px;padding:0 22px}
+  details[open]{background:#fff}
+  summary{cursor:pointer;list-style:none;padding:18px 0;font-size:16.5px;font-weight:650;line-height:1.5;display:flex;gap:14px;align-items:flex-start}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"＋";flex:none;color:var(--violet);font-weight:700;font-size:15px;line-height:1.6}
+  details[open] summary::before{content:"－"}
+  details .answer{padding:0 0 20px;font-size:15px;color:#33303a;border-top:1px dashed var(--line);padding-top:16px}
+  details .answer p:last-child{margin-bottom:0}
+
+  /* ---------- FOOTER CTA ---------- */
+  .closing{padding:64px 0 80px}
+  .closing p{max-width:52ch}
+
+  /* ---------- BOTTOM NAV ---------- */
+  .bottomnav{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(236,234,239,.96);border-top:1px solid var(--line);backdrop-filter:blur(6px)}
+  .bottomnav ul{max-width:var(--max);margin:0 auto;padding:0 22px;list-style:none;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+  .bottomnav ul::-webkit-scrollbar{display:none}
+  .bottomnav a{display:block;padding:16px 12px;font-size:13px;letter-spacing:.02em;color:var(--muted);border-bottom:2px solid transparent;white-space:nowrap}
+  .bottomnav a:hover,.bottomnav a:focus-visible{color:var(--ink);border-bottom-color:var(--violet)}
+
+  @media (max-width:640px){
+    .hero{padding:38px 0 30px}
+    .hero-title{font-size:clamp(52px,20vw,120px)}
+    section{padding:48px 0}
+    .plan{padding:22px 20px}
+    .plan-price{margin-left:0;width:100%}
+    details{padding:0 16px}
+    .bottomnav a{padding:14px 9px;font-size:12px}
+  }
+</style><header class="hero">
+  <div class="wrap">
+    <p class="hero-kicker">订阅说明 · 页面整理</p>
+    <h1 class="hero-title">Dvpn<span class="dot">.</span></h1>
+    <p class="hero-sub">把订阅分成几档、每档给多少、客户端怎么装、遇到问题找谁，这一页按顺序写明白。</p>
+    <dl class="hero-meta">
+      <div>
+        <dt>方案数量</dt>
+        <dd>三档：基础、旗舰、团队</dd>
+      </div>
+      <div>
+        <dt>计费方式</dt>
+        <dd>按月或按年，年付价见各档</dd>
+      </div>
+      <div>
+        <dt>阅读方式</dt>
+        <dd>自下导航跳转，各区块独立</dd>
+      </div>
+    </dl>
+  </div>
+</header>
+
+<main>
+
+  <section id="about">
+    <div class="wrap">
+      <p class="sec-label">写在前面</p>
+      <h2>先用一句话说明这页在讲什么</h2>
+      <p class="lede">Dvpn 的订阅并不复杂，复杂的是信息散落在各处。这里把能公开确认的部分集中起来，按“先看方案、再看步骤、最后看问题”的顺序排好。</p>
+      <div class="columns">
+        <div class="bar-card">
+          <h3>这页会写到</h3>
+          <p>三档订阅的名称、价格、按年付价格与各自包含的权益；客户端准备与使用步骤；以及一组按主题整理的常见问题。</p>
+        </div>
+        <div class="bar-card is-quiet">
+          <h3>这页不会写</h3>
+          <p>不承诺具体速度与延迟，不承诺节点数量与覆盖地区，不虚构用户评价与退款政策。凡未在此页出现的细节，都以你实际看到的产品页面和通知为准。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans">
+    <div class="wrap">
+      <p class="sec-label">订阅方案</p>
+      <h2>三档订阅，逐张往下读</h2>
+      <p>每张卡片左侧的色条是同一条，颜色深浅只表示在序列里的位置，不表示优劣。流量、设备数与支持方式都写在卡片正文里，不做额外承诺。</p>
+
+      <div class="plan">
+        <div class="plan-head">
+          <h3 class="plan-name">基础版</h3>
+          <div class="plan-price">¥15<span> / 月</span></div>
+        </div>
+        <p class="plan-annual">按年付 ¥150 / 年</p>
+        <ul>
+          <li>每月 100GB 流量</li>
+          <li>支持 3 台设备同时在线</li>
+          <li>基础流媒体解锁</li>
+          <li>普通线路节点池</li>
+        </ul>
+      </div>
+
+      <div class="plan is-recommended">
+        <div class="plan-head">
+          <h3 class="plan-name">旗舰版</h3>
+          <span class="plan-flag">多数人选择</span>
+          <div class="plan-price">¥35<span> / 月</span></div>
+        </div>
+        <p class="plan-annual">按年付 ¥350 / 年</p>
+        <ul>
+          <li>每月 300GB 流量</li>
+          <li>支持 5 台设备同时在线</li>
+          <li>全节点原生流媒体解锁</li>
+          <li>IPLC 专线游戏加速优化</li>
+          <li>7×24 优先工单支持</li>
+        </ul>
+      </div>
+
+      <div class="plan is-quiet">
+        <div class="plan-head">
+          <h3 class="plan-name">团队版</h3>
+          <div class="plan-price">¥85<span> / 月</span></div>
+        </div>
+        <p class="plan-annual">按年付 ¥850 / 年</p>
+        <ul>
+          <li>每月 1000GB 流量</li>
+          <li>支持 20 台设备同时在线</li>
+          <li>VIP 专属高带宽节点</li>
+          <li>支持企业定制路由</li>
+          <li>专属客户经理服务</li>
+        </ul>
+      </div>
+
+      <p class="note">价格与权益以上述卡片为准。若你看到的页面与这里不一致，请以当前页面显示为最新。</p>
+    </div>
+  </section>
+
+  <section id="clients">
+    <div class="wrap">
+      <p class="sec-label">客户端</p>
+      <h2>客户端这一节，只讲准备与选择</h2>
+      <p>这部分不提供下载地址，也不标注版本号。原因很简单：链接和版本会变，写死在这里反而容易误导。下面只说明该准备什么、该按什么顺序做。</p>
+
+      <div class="bar-card">
+        <h3>先确认系统与版本</h3>
+        <p>在设备的“关于本机”或“系统信息”里查看系统名称与版本，再决定装哪种客户端。桌面端与移动端的安装方式不同，这一步核对清楚能省掉后面很多来回。</p>
+        <p>获取安装文件的渠道以 Dvpn 官方页面或你已订阅服务的后台说明为准；本页不提供下载链接。</p>
+      </div>
+
+      <div class="bar-card">
+        <h3>再确认同时在线设备数</h3>
+        <p>基础版 3 台、旗舰版 5 台、团队版 20 台。这个数字指的是同时在线，不是累计安装。如果家里和办公室都要用，先把这个数算清楚再选档。</p>
+      </div>
+
+      <div class="bar-card is-quiet">
+        <h3>最后确认流量节奏</h3>
+        <p>每月 100GB、300GB、1000GB 三档。轻度使用与长时间视频、大文件传输的消耗差别很大，建议先按自己的日常习惯估一个上限，再对照卡片决定。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="steps">
+    <div class="wrap">
+      <p class="sec-label">使用步骤</p>
+      <h2>从零到能用，四步走完</h2>
+      <ol class="steps">
+        <li>
+          <h3>先选一档订阅</h3>
+          <p>对照上面的三张卡片，按同时在线设备数和每月流量上限选。拿不准就从最低一档开始，用满一个月再决定是否升级，比一次性买年付更稳。</p>
+        </li>
+        <li>
+          <h3>准备好你的设备</h3>
+          <p>把要用的设备列出来，逐台核对系统版本。设备数量超过所选档位上限时，多出来的那台会挤掉已在线的设备，这一点要提前想好。</p>
+        </li>
+        <li>
+          <h3>按你的平台装客户端</h3>
+          <p>从官方渠道获取安装文件，完成安装后打开客户端。首次打开通常需要允许系统提示的权限，按要求确认即可，不要跳过系统弹窗。</p>
+        </li>
+        <li>
+          <h3>登录并逐项核对</h3>
+          <p>登录后先看账号信息里的档位是否与你购买的一致，再看流量与在线设备数。确认无误后，再按客户端界面上的说明完成后续设置。</p>
+        </li>
+      </ol>
+      <p class="note">以上是通用顺序，不涉及具体界面的按钮名称。实际步骤以你安装的客户端版本为准。</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <p class="sec-label">常见问题</p>
+      <h2>几个会被反复问到的问题</h2>
+      <p>下面每条都可以点开。答案只覆盖此页能确认的范围，超出范围的细节不做推测。</p>
+
+      <div>
+        <details>
+          <summary>三档订阅的主要差别在哪里？</summary>
+          <div class="answer">
+            <p>差别集中在三处：每月流量（100GB / 300GB / 1000GB）、同时在线设备数（3 / 5 / 20），以及支持的响应方式（旗舰版有 7×24 优先工单，团队版有专属客户经理）。</p>
+            <p>基础版与旗舰版在流媒体解锁范围上也有区别，旗舰版标注为全节点原生解锁。是否适合你，取决于你主要用它做什么。</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>按年付比按月付省多少？</summary>
+          <div class="answer">
+            <p>按卡片上的数字：基础版按月 ¥15、按年 ¥150；旗舰版按月 ¥35、按年 ¥350；团队版按月 ¥85、按年 ¥850。</p>
+            <p>按年付的金额与按月付十个月相当。也就是说，年付的前提是你能稳定使用十个月以上，否则按月付更灵活。</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>同时在线设备数是怎么算的？</summary>
+          <div class="answer">
+            <p>指的是同一时间处于在线状态的设备数量，不是累计安装数。比如旗舰版 5 台，意味着第五台之外的设备上线时，会占用或顶替已在线的名额。</p>
+            <p>如果你有多台设备轮换使用，按“最多同时开几台”来选档，比按“一共装了几台”更准确。</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>客户端从哪里获取？</summary>
+          <div class="answer">
+            <p>本页不提供下载链接，也不标注具体版本号。获取渠道以 Dvpn 官方页面或你所订阅服务的后台说明为准。</p>
+            <p>安装前建议核对系统版本，避免装到与设备不匹配的安装包。</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>流量用完了会怎样？</summary>
+          <div class="answer">
+            <p>此页没有记录流量用尽后的具体处理方式，因此不做说明。建议在订阅前通过官方渠道确认这一条，再决定选哪一档。</p>
+            <p>如果不确定自己的用量，先选较低一档并按月付，观察一个完整周期后再调整，是更稳妥的做法。</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>支持哪些付款方式，能开发票吗？</summary>
+          <div class="answer">
+            <p>此页不涉及付款方式、发票与退款流程的具体细节。这些内容会随渠道和时间变化，写在这里容易过期。</p>
+            <p>涉及金额与凭证的问题，请以官方页面或服务后台的说明为准。</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>团队版和旗舰版的区别该怎么判断？</summary>
+          <div class="answer">
+            <p>团队版的关键不是流量更多，而是把“多人一起用”这件事考虑进去了：20 台同时在线、支持企业定制路由、有专属客户经理。</p>
+            <p>如果你只是个人重度使用，旗舰版通常已经覆盖；如果你要为一个小组统一配置，团队版的组织方式更省事。</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="closing" class="closing">
+    <div class="wrap">
+      <p class="sec-label">小结</p>
+      <h2>先算清楚，再决定</h2>
+      <p>选档这件事，本质上只回答两个问题：最多几台设备一起在线，一个月大概用多少流量。把这两个数写下来，对照卡片就能定。</p>
+      <p>其余细节，等订阅前再去官方页面核对一遍。此页的作用是把结构讲清楚，而不是替代产品页。</p>
+      <p class="note">页面内容整理于当前版本，价格与权益如有调整，以实际页面显示为准。</p>
+    </div>
+  </section>
+
+</main>
+
+<nav class="bottomnav" aria-label="页面目录">
+  <ul>
+    <li><a href="#about">写在前面</a></li>
+    <li><a href="#plans">订阅方案</a></li>
+    <li><a href="#clients">客户端</a></li>
+    <li><a href="#steps">使用步骤</a></li>
+    <li><a href="#faq">常见问题</a></li>
+    <li><a href="#closing">小结</a></li>
+  </ul>
+</nav><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
